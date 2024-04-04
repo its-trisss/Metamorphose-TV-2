@@ -1,0 +1,186 @@
+.root {
+    -fx-font-family: 'Arial';
+    -fx-background-color: black;
+}
+
+#mainMenuBackground {
+    -fx-background-image: url('/meta.png');
+    -fx-background-size: stretch;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+.black-border {
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+.button {
+    -fx-background-color: #333;
+    -fx-text-fill: #FFF;
+    -fx-padding: 0.5em;
+    -fx-font-size: 1em;
+    -fx-border-color: transparent;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+.button:hover {
+    -fx-background-color: #555;
+}
+.check-box {
+    -fx-text-fill: #FFF;
+
+}
+
+.label {
+    -fx-text-fill: #ecf0f1;
+    -fx-font-size: 10px;
+}
+
+
+
+#continueButton {
+    -fx-background-color: black;
+    -fx-text-fill: #FFF;
+    -fx-font-size: 10px;
+}
+
+#rightSideVBox .check-box {
+    -fx-text-fill: #FFFFFF;
+}
+
+
+/*#leftSideVBox, #centerVBox, #rightSideVBox {
+
+    -fx-padding: 0.5em;
+    -fx-spacing: 0.5em;
+    -fx-alignment: top-center;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}*/
+
+#characterImage {
+
+}
+
+#buttonVbox {
+    -fx-spacing: 10;
+    -fx-padding: 10;
+    -fx-alignment: center-right; /* Aligns content to the center right */
+}
+
+#playButton, #optionsButton, #exitButton {
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-min-width: 100px;
+}
+
+#playButton:hover, #optionsButton:hover, #exitButton:hover {
+    -fx-background-color: grey;
+}
+
+.center-screen {
+    -fx-background-image: url('/paper.jpg');
+    -fx-border-color: white;
+    -fx-border-width: 5px;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+
+}
+.left-screen {
+    -fx-background-image: url('/paper.jpg');
+    -fx-border-color: white;
+    -fx-border-width: 5px;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+
+}
+.right-screen {
+    -fx-background-image: url('/paper.jpg');
+    -fx-border-color: white;
+    -fx-border-width: 5px;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+}
+.head-image {
+    -fx-alignment: top-center;
+}
+
+.description-label {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-alignment: bottom-center;
+}
+
+.dialogue-label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-alignment: bottom-center;
+}
+
+#sfxVolumeSlider, #musicVolumeSlider {
+    -fx-pref-width: 50px;
+    -fx-pref-height: 10px;
+}
+
+
+#dialogueLabel {
+    -fx-background-color: #95a5a6;
+}
+
+#symptomLabel {
+    -fx-background-color: #bdc3c7;
+}
+
+#dialogueLabel, #symptomsLabel {
+    -fx-background-color: #95a5a6;
+    -fx-text-fill: #ecf0f1;
+    -fx-padding: 10;
+    -fx-border-radius: 5;
+    -fx-font-size: 10px;
+    -fx-wrap-text: true;
+}
+.vbox.end-of-day-layout {
+    -fx-spacing: 20;
+    -fx-alignment: center;
+    -fx-background-color: black;
+}
+
+.label.end-of-day-label {
+    -fx-font-size: 200px;
+}
+
+.button.continue-button {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10 20;
+}
+
+.button.continue-button:hover {
+    -fx-background-color: grey;
+}
+
+.button.continue-button:pressed {
+    -fx-background-color: grey;
+}
+
+.game-over {
+    -fx-background-image: url('/boar.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.boar-herpes{
+    -fx-font-size: 80px;
+}
+
+.button.return-main-menu:hover{
+    -fx-background-color: grey;
+}
+
+.button.return-main-menu:pressed{
+    -fx-background-color: grey;
+}

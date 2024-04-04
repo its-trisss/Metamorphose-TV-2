@@ -1,10 +1,5 @@
-module tv2.metamorphose {
+module com.example.metamorphose {
     requires javafx.controls;
-    requires javafx.fxml;
-
-    requires org.controlsfx.controls;
-    requires net.synedra.validatorfx;
-
-    opens tv2.metamorphose to javafx.fxml;
+    requires java.desktop;
     exports tv2.metamorphose;
 }
