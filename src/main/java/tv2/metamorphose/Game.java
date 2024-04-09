@@ -26,15 +26,18 @@ public class Game {
     private VBox rightSideScreen;
     private VBox rightSideVBox;
     private VBox centerVBox;
+    private  Set<String> discoveredSymptoms;
     private Label dialogueLabel;
     private VBox characterSelection;
     private int currentDay = 1;
+
     private int currentPatient = 1;
+
     private String patient;
     private String[] symptoms;
     Days gameplay = new Days(currentDay, currentPatient);
     public Game(Stage primaryStage) {
-        SetLayout(primaryStage);
+        showBeginningOfDayScreen(primaryStage);
     }
 
     private void SetLayout(Stage primaryStage) {
@@ -62,6 +65,38 @@ public class Game {
     }
 
     public void startGame() {}
+
+    private void showBeginningOfDayScreen(Stage primaryStage) {
+        stage = primaryStage;
+
+        VBox beginOfDayLayout = new VBox(10);
+        beginOfDayLayout.setAlignment(Pos.CENTER);
+        beginOfDayLayout.getStyleClass().add("end-of-day-layout");
+
+        Image doctorImage = new Image("/boar.png");
+        ImageView doctorImageView = new ImageView(doctorImage);
+        doctorImageView.setFitWidth(400);
+        doctorImageView.setFitHeight(600);
+        doctorImageView.setPreserveRatio(true);
+        doctorImageView.getStyleClass().add("head-image");
+
+        dialogueLabel = new Label(gameplay.beginDayDialogue);
+        dialogueLabel.getStyleClass().add("dialogueLabel");
+        dialogueLabel.setStyle("-fx-font-size: 13.5");
+
+        Button continueButton = new Button("Start Game");
+        continueButton.getStyleClass().add("continueButton");
+        continueButton.setOnAction(event -> {
+            SetLayout(primaryStage);
+        });
+
+        beginOfDayLayout.getChildren().addAll(doctorImageView, dialogueLabel, continueButton);
+
+        Scene beginOfDayScene = new Scene(beginOfDayLayout, 400, 200);
+        beginOfDayScene.getStylesheets().add("StyleSheet.css");
+        stage.setScene(beginOfDayScene);
+        stage.show();
+    }
 
     private void showEndOfDayScreen() {
         VBox endOfDayLayout = new VBox(10);
@@ -141,7 +176,6 @@ public class Game {
         return leftSideHBox;
     }
 
-
     private HBox BodyButtons() {
 //        String headImageUrl = "/face.png";
 //        String armsImageUrl = "/arms.png";
@@ -179,12 +213,12 @@ public class Game {
         VBox torsoButtonVBox = new VBox(torsoButton);
         VBox legsButtonVBox = new VBox(legsButton);
 
-        VBox vBox = new VBox(headButtonVBox, armsButtonVBox, torsoButtonVBox, legsButtonVBox);
-        vBox.setId("blackBox");
-        vBox.setAlignment(Pos.BOTTOM_CENTER);
-        vBox.setSpacing(10);
+        HBox hBox1 = new HBox(headButtonVBox, armsButtonVBox, torsoButtonVBox, legsButtonVBox);
+        hBox1.setId("blackBox");
+        hBox1.setAlignment(Pos.BOTTOM_CENTER);
+        hBox1.setSpacing(10);
 
-        HBox hBox = new HBox(vBox);
+        HBox hBox = new HBox(hBox1);
         return hBox;
     }
 
@@ -219,6 +253,10 @@ public class Game {
         double centerScreenWidth = 400;
         centerVBox.setPrefWidth(centerScreenWidth);
 
+        Label patientName = new Label("Patient: " + gameplay.name);
+        patientName.getStyleClass().add("description-label");
+        patientName.setAlignment(Pos.TOP_CENTER);
+
         Image headImage = new Image("/head.png");
         ImageView headImageView = new ImageView(headImage);
         headImageView.setFitWidth(400);
@@ -234,7 +272,7 @@ public class Game {
 
         VBox descriptionDialogueBox = new VBox(10);
         descriptionDialogueBox.setAlignment(Pos.CENTER);
-        descriptionDialogueBox.getChildren().addAll(headImageView, descriptionLabel, dialogueLabel);
+        descriptionDialogueBox.getChildren().addAll(patientName, headImageView, descriptionLabel, dialogueLabel);
 
         centerVBox.getChildren().addAll(descriptionDialogueBox);
         centerVBox.getStyleClass().add("black-border");
@@ -245,7 +283,7 @@ public class Game {
         VBox rightSideVBox = new VBox(10);
 
         Label checklistLabel = new Label("Symptom Checklist");
-        checklistLabel.setStyle("-fx-font-size: 18px; -fx-text-fill: #ecf0f1;");
+        checklistLabel.setStyle("-fx-font-size: 18px; -fx-text-fill: black;");
         checklistLabel.setMaxWidth(Double.MAX_VALUE);
         checklistLabel.setWrapText(true);
         rightSideVBox.getChildren().add(checklistLabel);
@@ -253,20 +291,22 @@ public class Game {
         for (String symptom : symptoms) {
             CheckBox cb = new CheckBox(symptom);
             cb.setMaxWidth(stage.getWidth() * 0.2);
-            cb.setStyle("-fx-text-fill: white;");
+            cb.setStyle("-fx-text-fill: black;");
+            cb.setPadding(new Insets(10));
             rightSideVBox.getChildren().add(cb);
         }
 
         rightSideVBox.getStyleClass().add("right-screen");
         Button continueButton = new Button(gameplay.buttonName);
-        continueButton.setId("continueButton");
+        continueButton.setId("continue-button");
         continueButton.setStyle("-fx-padding: 15;");
+        continueButton.setAlignment(Pos.BOTTOM_CENTER);
 
         continueButton.setOnAction(event -> {
             ++currentPatient;
 
             if (gameplay.buttonName == "Clock Out") {
-                ++currentDay;
+                showEndOfDayScreen();
             }
             centerVBox = null;
             gameplay = new Days(currentDay, currentPatient);

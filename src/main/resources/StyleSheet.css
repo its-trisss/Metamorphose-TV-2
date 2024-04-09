@@ -38,8 +38,6 @@
     -fx-font-size: 10px;
 }
 
-
-
 #continueButton {
     -fx-background-color: black;
     -fx-text-fill: #FFF;
@@ -83,24 +81,24 @@
 }
 
 .center-screen {
-    -fx-background-image: url('/paper.jpg');
-    -fx-border-color: white;
+    -fx-background-color: #e9e9e6;
+    -fx-border-color: #e9e9e6;
     -fx-border-width: 5px;
     -fx-border-radius: 5px;
     -fx-padding: 10px;
 
 }
 .left-screen {
-    -fx-background-image: url('/paper.jpg');
-    -fx-border-color: white;
+    -fx-background-color: #e9e9e6;
+    -fx-border-color: #e9e9e6;
     -fx-border-width: 5px;
     -fx-border-radius: 5px;
     -fx-padding: 10px;
 
 }
 .right-screen {
-    -fx-background-image: url('/paper.jpg');
-    -fx-border-color: white;
+    -fx-background-color: #e9e9e6;
+    -fx-border-color: #e9e9e6;
     -fx-border-width: 5px;
     -fx-border-radius: 5px;
     -fx-padding: 10px;
@@ -110,13 +108,13 @@
 }
 
 .description-label {
-    -fx-text-fill: white;
+    -fx-text-fill: black;
     -fx-font-size: 16px;
     -fx-alignment: bottom-center;
 }
 
 .dialogue-label {
-    -fx-text-fill: white;
+    -fx-text-fill: black;
     -fx-font-size: 14px;
     -fx-alignment: bottom-center;
     -fx-wrap-text: true;
@@ -126,7 +124,6 @@
     -fx-pref-width: 50px;
     -fx-pref-height: 10px;
 }
-
 
 #dialogueLabel {
     -fx-background-color: #95a5a6;
@@ -141,7 +138,7 @@
     -fx-text-fill: #ecf0f1;
     -fx-padding: 10;
     -fx-border-radius: 5;
-    -fx-font-size: 10px;
+    -fx-font-size: 20px;
     -fx-wrap-text: true;
 }
 .vbox.end-of-day-layout {
@@ -156,7 +153,7 @@
 
 .button.continue-button {
     -fx-background-color: black;
-    -fx-text-fill: white;
+    -fx-text-fill: black;
     -fx-font-size: 16px;
     -fx-padding: 10 20;
 }
@@ -167,6 +164,10 @@
 
 .button.continue-button:pressed {
     -fx-background-color: grey;
+}
+
+.mainGameLayout {
+    -fx-background-image: url('/backgroundImg.jpg');
 }
 
 .game-over {
