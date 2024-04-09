@@ -92,7 +92,7 @@ public class Main extends Application {
         Label dialogueContent = new Label("The dialogue box provides information about collected symptoms " +
                 "and instructions on how to proceed with the game.");
 
-        Button startGameButton = new Button("Start Game");
+        Button startGameButton = new Button("Start Day");
         startGameButton.setOnAction(event -> {
             new Game(stage).startGame();
         });

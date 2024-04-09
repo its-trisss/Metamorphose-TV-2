@@ -119,6 +119,7 @@
     -fx-text-fill: white;
     -fx-font-size: 14px;
     -fx-alignment: bottom-center;
+    -fx-wrap-text: true;
 }
 
 #sfxVolumeSlider, #musicVolumeSlider {

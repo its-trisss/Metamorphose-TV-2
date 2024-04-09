@@ -21,19 +21,26 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Game {
-    private final Stage stage;
-    private final Scene mainGameScene;
+    private  Stage stage;
+    private  Scene mainGameScene;
     private VBox rightSideScreen;
     private VBox rightSideVBox;
     private VBox centerVBox;
-    private final Set<String> discoveredSymptoms;
     private Label dialogueLabel;
     private VBox characterSelection;
     private int currentDay = 1;
-    private Timeline dayEndTimer = null;
+    private int currentPatient = 1;
+    private String patient;
+    private String[] symptoms;
+    Days gameplay = new Days(currentDay, currentPatient);
     public Game(Stage primaryStage) {
-        this.stage = primaryStage;
-        this.discoveredSymptoms = new HashSet<>();
+        SetLayout(primaryStage);
+    }
+
+    private void SetLayout(Stage primaryStage) {
+        symptoms = gameplay.symptoms;
+
+        stage = primaryStage;
         this.rightSideVBox = new VBox(10);
 
         this.rightSideScreen = new VBox(10);
@@ -52,22 +59,9 @@ public class Game {
         mainGameScene.getStylesheets().add("StyleSheet.css");
         stage.setScene(mainGameScene);
         stage.show();
-
-        //timer for each day
-        dayEndTimer = new Timeline(new KeyFrame(Duration.minutes(5), event -> {
-            if (currentDay <= 3) {
-                showEndOfDayScreen();
-            } else {
-
-                dayEndTimer.stop();
-            }
-        }));
-        dayEndTimer.setCycleCount(Timeline.INDEFINITE);
-        dayEndTimer.play();
     }
 
-    public void startGame() {
-    }
+    public void startGame() {}
 
     private void showEndOfDayScreen() {
         VBox endOfDayLayout = new VBox(10);
@@ -115,7 +109,6 @@ public class Game {
         stage.show();
 
         returnToMainMenuButton.setOnAction(event -> {
-            dayEndTimer.stop();
 
             currentDay = 1;
 
@@ -127,7 +120,7 @@ public class Game {
         VBox leftSideHBox = new VBox(20);
         leftSideHBox.setPadding(new Insets(10));
 
-        Image characterImg = new Image("/character.png");
+        Image characterImg = new Image(gameplay.characterImage);
         ImageView characterImage = new ImageView(characterImg);
         characterImage.setId("characterImage");
         characterImage.setFitWidth(300);
@@ -150,10 +143,10 @@ public class Game {
 
 
     private HBox BodyButtons() {
-        String headImageUrl = "/face.png";
-        String armsImageUrl = "/arms.png";
-        String torsoImageUrl = "/torso.png";
-        String legsImageUrl = "/legs.png";
+//        String headImageUrl = "/face.png";
+//        String armsImageUrl = "/arms.png";
+//        String torsoImageUrl = "/torso.png";
+//        String legsImageUrl = "/legs.png";
 
         Button headButton = new Button("Head");
         Button armsButton = new Button("Arms");
@@ -166,19 +159,19 @@ public class Game {
         legsButton.setId("bodyButtons");
 
         headButton.setOnAction(actionEvent -> {
-            BodyButtonAction(headImageUrl, "head");
+            BodyButtonAction(gameplay.headImage, "head");
         });
 
         armsButton.setOnAction(actionEvent -> {
-            BodyButtonAction(armsImageUrl, "arms");
+            BodyButtonAction(gameplay.armImage, "arms");
         });
 
         torsoButton.setOnAction(actionEvent -> {
-            BodyButtonAction(torsoImageUrl, "torso");
+            BodyButtonAction(gameplay.torsoImage, "torso");
         });
 
         legsButton.setOnAction(actionEvent -> {
-            BodyButtonAction(legsImageUrl, "legs");
+            BodyButtonAction(gameplay.legImage, "legs");
         });
 
         VBox headButtonVBox = new VBox(headButton);
@@ -196,7 +189,6 @@ public class Game {
     }
 
     private void BodyButtonAction(String imageUrl, String bodyPart) {
-        discoveredSymptoms.add(bodyPart);
         ImageView imageView = new ImageView(new Image(imageUrl));
         imageView.setFitWidth(300);
         imageView.setFitHeight(550);
@@ -209,8 +201,6 @@ public class Game {
         Scene closeupOfBodyPartScene = new Scene(vBox);
 
         ChangeScene(closeupOfBodyPartScene);
-
-        updateSymptomsChecklist();
     }
 
     private Button createReturnButton() {
@@ -236,10 +226,10 @@ public class Game {
         headImageView.setPreserveRatio(true);
         headImageView.getStyleClass().add("head-image");
 
-        Label descriptionLabel = new Label("Description of character");
+        Label descriptionLabel = new Label("Character Dialogue");
         descriptionLabel.getStyleClass().add("description-label");
 
-        dialogueLabel = new Label("Dialogue goes here");
+        dialogueLabel = new Label(gameplay.dialogue);
         dialogueLabel.getStyleClass().add("dialogue-label");
 
         VBox descriptionDialogueBox = new VBox(10);
@@ -260,36 +250,36 @@ public class Game {
         checklistLabel.setWrapText(true);
         rightSideVBox.getChildren().add(checklistLabel);
 
-        String[] symptoms = new String[]{"Swelling", "Rash", "Bruising", "Sweating", "Wounds", "Pallor", "Bloodshot eyes", "Skin Lesions", "Gangrene", "Facial Drooping"};
         for (String symptom : symptoms) {
             CheckBox cb = new CheckBox(symptom);
             cb.setMaxWidth(stage.getWidth() * 0.2);
             cb.setStyle("-fx-text-fill: white;");
             rightSideVBox.getChildren().add(cb);
         }
+
         rightSideVBox.getStyleClass().add("right-screen");
-        Button continueButton = new Button("Continue");
+        Button continueButton = new Button(gameplay.buttonName);
         continueButton.setId("continueButton");
         continueButton.setStyle("-fx-padding: 15;");
+
+        continueButton.setOnAction(event -> {
+            ++currentPatient;
+
+            if (gameplay.buttonName == "Clock Out") {
+                ++currentDay;
+            }
+            centerVBox = null;
+            gameplay = new Days(currentDay, currentPatient);
+            SetLayout(stage);
+        });
+
         rightSideVBox.getChildren().add(continueButton);
         rightSideVBox.getStyleClass().add("black-border");
         return rightSideVBox;
     }
 
-    private void updateSymptomsChecklist() {
-        for (Node child : rightSideVBox.getChildren()) {
-            if (child instanceof CheckBox checkBox) {
-                if (discoveredSymptoms.contains(checkBox.getText())) {
-                    checkBox.setVisible(true);
-                }
-            }
-        }
-        rightSideVBox.setVisible(!discoveredSymptoms.isEmpty());
-    }
-
     private void ChangeScene(Scene scene) {
         scene.getStylesheets().add("StyleSheet.css");
-        rightSideVBox.setVisible(!discoveredSymptoms.isEmpty());
         stage.setScene(scene);
     }
 }
