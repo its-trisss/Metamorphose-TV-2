@@ -159,7 +159,7 @@ public class Game {
         ImageView characterImage = new ImageView(characterImg);
         characterImage.setId("characterImage");
         characterImage.setFitWidth(300);
-        characterImage.setFitHeight(600);
+        characterImage.setFitHeight(1000);
         characterImage.setPreserveRatio(true);
         leftSideHBox.getStyleClass().add("left-screen");
         HBox bodyButtonsVBox = BodyButtons();
