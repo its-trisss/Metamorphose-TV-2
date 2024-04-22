@@ -6,14 +6,29 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
+import javafx.util.Duration;
+
+
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 
 public class Main extends Application {
+    public Path path = Paths.get("src", "main", "resources", "backgroundMusic.mp3");
+    public Media media = new Media(path.toUri().toString());
+    public MediaPlayer mediaPlayer = new MediaPlayer(media);
 
     @Override
     public void start(Stage stage) {
+
+        backgroundMusic();
+
         StackPane root = new StackPane();
         root.setId("mainMenuBackground");
 
@@ -27,6 +42,18 @@ public class Main extends Application {
         stage.setHeight(650);
         stage.show();
     }
+
+    public void backgroundMusic() {
+       mediaPlayer.setOnEndOfMedia(new Runnable() {
+           @Override
+           public void run() {
+               mediaPlayer.seek(Duration.ZERO);
+           }
+       });
+
+        mediaPlayer.play();
+    }
+
 
     private void setupUI(StackPane root, Stage stage) {
         VBox vbox = new VBox(25);
@@ -94,7 +121,7 @@ public class Main extends Application {
 
         Button startGameButton = new Button("Start Day");
         startGameButton.setOnAction(event -> {
-            new Game(stage).startGame();
+            new Game(stage, mediaPlayer).startGame();
         });
 
         tutorialLayout.getChildren().addAll(

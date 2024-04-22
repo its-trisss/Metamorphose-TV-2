@@ -14,6 +14,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -36,7 +37,7 @@ public class Game {
     private String patient;
     private String[] symptoms;
     Days gameplay = new Days(currentDay, currentPatient);
-    public Game(Stage primaryStage) {
+    public Game(Stage primaryStage, MediaPlayer mediaPlayer) {
         showBeginningOfDayScreen(primaryStage);
     }
 
