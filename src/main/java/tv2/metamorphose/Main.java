@@ -17,7 +17,7 @@ public class Main extends Application {
         StackPane root = new StackPane();
         root.setId("mainMenuBackground");
 
-        Scene scene = new Scene(root, 1250, 650);
+        Scene scene = new Scene(root, 1250, 1000);
         scene.getStylesheets().add("/StyleSheet.css");
 
         setupUI(root, stage);

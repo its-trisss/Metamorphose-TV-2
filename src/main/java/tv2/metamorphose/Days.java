@@ -80,7 +80,7 @@ public class Days {
                 "it's hard to remember how long its been. I’ve had a horrible headache, I haven’t been eating and I feel like my body is shaking a lot.";
 
         //TODO: Change this
-        characterImage = "/character.png";
+        characterImage = "/lena.png";
         headImage = "/face.png";
         armImage = "/arms.png";
         torsoImage = "/torso.png";
@@ -95,7 +95,7 @@ public class Days {
         dialogue = "Hey doc, I have not been eatin’ well, and I’ve had a pretty mild headache, but honestly I couldn’t tell you how long though it's kinda hard to remember.";
 
         //TODO: Change this
-        characterImage = "/boar.png";
+        characterImage = "/miles.png";
         headImage = "/face.png";
         armImage = "/arms.png";
         torsoImage = "/torso.png";
@@ -111,7 +111,7 @@ public class Days {
         dialogue = "Hey um yea, I have had a horrible headache and been running a pretty high fever for the last few days, haven’t been eating because of it, and I think I’ve been shaking.";
 
         //TODO: Change this
-        characterImage = "/character.png";
+        characterImage = "/aria.png";
         headImage = "/face.png";
         armImage = "/arms.png";
         torsoImage = "/torso.png";
@@ -126,7 +126,7 @@ public class Days {
         dialogue = "Doc, imr feeln terble, em not hngry, and head hurts, and em shky.";
 
         //TODO: Change this
-        characterImage = "/boar.png";
+        characterImage = "/finn.png";
         headImage = "/face.png";
         armImage = "/arms.png";
         torsoImage = "/torso.png";
@@ -142,7 +142,7 @@ public class Days {
         dialogue = "Evening, sorry to be here so late but i just got off work, I’ve has a fever, a headache, and haven’t been able to really eat, and it has been making me feel rather weak.";
 
         //TODO: Change this
-        characterImage = "/character.png";
+        characterImage = "/arjun.png";
         headImage = "/face.png";
         armImage = "/arms.png";
         torsoImage = "/torso.png";

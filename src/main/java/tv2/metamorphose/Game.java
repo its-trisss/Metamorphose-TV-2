@@ -58,7 +58,7 @@ public class Game {
         characterSelection.setAlignment(Pos.CENTER);
         characterSelection.setPadding(new Insets(20));
 
-        mainGameScene = new Scene(mainGameLayoutHBox, 1250, 650);
+        mainGameScene = new Scene(mainGameLayoutHBox, 1250, 1000);
         mainGameScene.getStylesheets().add("StyleSheet.css");
         stage.setScene(mainGameScene);
         stage.show();
@@ -159,7 +159,7 @@ public class Game {
         ImageView characterImage = new ImageView(characterImg);
         characterImage.setId("characterImage");
         characterImage.setFitWidth(300);
-        characterImage.setFitHeight(1000);
+        characterImage.setFitHeight(500);
         characterImage.setPreserveRatio(true);
         leftSideHBox.getStyleClass().add("left-screen");
         HBox bodyButtonsVBox = BodyButtons();
@@ -177,24 +177,13 @@ public class Game {
     }
 
     private HBox BodyButtons() {
-//        String headImageUrl = "/face.png";
-//        String armsImageUrl = "/arms.png";
-//        String torsoImageUrl = "/torso.png";
-//        String legsImageUrl = "/legs.png";
-
-        Button headButton = new Button("Head");
         Button armsButton = new Button("Arms");
         Button torsoButton = new Button("Torso");
         Button legsButton = new Button("Legs");
 
-        headButton.setId("bodyButtons");
         armsButton.setId("bodyButtons");
         torsoButton.setId("bodyButtons");
         legsButton.setId("bodyButtons");
-
-        headButton.setOnAction(actionEvent -> {
-            BodyButtonAction(gameplay.headImage, "head");
-        });
 
         armsButton.setOnAction(actionEvent -> {
             BodyButtonAction(gameplay.armImage, "arms");
@@ -208,12 +197,11 @@ public class Game {
             BodyButtonAction(gameplay.legImage, "legs");
         });
 
-        VBox headButtonVBox = new VBox(headButton);
         VBox armsButtonVBox = new VBox(armsButton);
         VBox torsoButtonVBox = new VBox(torsoButton);
         VBox legsButtonVBox = new VBox(legsButton);
 
-        HBox hBox1 = new HBox(headButtonVBox, armsButtonVBox, torsoButtonVBox, legsButtonVBox);
+        HBox hBox1 = new HBox(armsButtonVBox, torsoButtonVBox, legsButtonVBox);
         hBox1.setId("blackBox");
         hBox1.setAlignment(Pos.BOTTOM_CENTER);
         hBox1.setSpacing(10);
