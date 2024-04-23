@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="openjfx.javafx.media" type="repository">
+    <properties maven-id="org.openjfx:javafx-media:LATEST" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-media/23-ea+3/javafx-media-23-ea+3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-media/23-ea+3/javafx-media-23-ea+3-win.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/23-ea+3/javafx-graphics-23-ea+3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/23-ea+3/javafx-graphics-23-ea+3-win.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/23-ea+3/javafx-base-23-ea+3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/23-ea+3/javafx-base-23-ea+3-win.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-media/23-ea+3/javafx-media-23-ea+3-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-media/23-ea+3/javafx-media-23-ea+3-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/23-ea+3/javafx-graphics-23-ea+3-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/23-ea+3/javafx-graphics-23-ea+3-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/23-ea+3/javafx-base-23-ea+3-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/23-ea+3/javafx-base-23-ea+3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
