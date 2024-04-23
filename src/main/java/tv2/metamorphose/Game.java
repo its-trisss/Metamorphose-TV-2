@@ -1,10 +1,7 @@
 package tv2.metamorphose;
 
-import javafx.animation.KeyFrame;
-import javafx.animation.Timeline;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
-import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
@@ -14,11 +11,12 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
+import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-
-import java.util.HashSet;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Set;
 
 public class Game {
@@ -109,6 +107,7 @@ public class Game {
 
         Button continueButton = new Button("Continue");
         continueButton.getStyleClass().add("continue-button");
+        continueButton.setStyle("-fx-text-fill: white");
 
         endOfDayLayout.getChildren().addAll(endOfDayLabel, continueButton);
 
@@ -119,7 +118,7 @@ public class Game {
 
         continueButton.setOnAction(event -> {
             currentDay++;
-            if (currentDay <= 3) {
+            if (currentDay <= 2) {
                 stage.setScene(mainGameScene);
                 stage.show();
             } else {
@@ -131,6 +130,18 @@ public class Game {
     private void showGameOverScreen() {
         VBox gameOverLayout = new VBox(10);
         gameOverLayout.setAlignment(Pos.CENTER);
+
+        Path path = Paths.get("src", "main", "resources", "WildBoar.m4a");
+        Media media = new Media(path.toUri().toString());
+        MediaPlayer mediaPlayer = new MediaPlayer(media);
+
+        mediaPlayer.setOnEndOfMedia(new Runnable() {
+            @Override
+            public void run() {
+                mediaPlayer.seek(Duration.ZERO);
+            }
+        });
+        mediaPlayer.play();
 
         Label gameOverLabel = new Label("You've got boar herpes");
         gameOverLabel.getStyleClass().add("boar-herpes");
@@ -246,7 +257,7 @@ public class Game {
         patientName.getStyleClass().add("description-label");
         patientName.setAlignment(Pos.TOP_CENTER);
 
-        Image headImage = new Image("/head.png");
+        Image headImage = new Image(gameplay.headImage);
         ImageView headImageView = new ImageView(headImage);
         headImageView.setFitWidth(400);
         headImageView.setFitHeight(600);
@@ -295,11 +306,37 @@ public class Game {
             ++currentPatient;
 
             if (gameplay.buttonName == "Clock Out") {
-                showEndOfDayScreen();
+                if (currentDay == 2) {
+                    VBox tbcLayout = new VBox(10);
+                    tbcLayout.setAlignment(Pos.CENTER);
+                    tbcLayout.getStyleClass().add("end-of-day-layout");
+
+                    Label tbcLabel = new Label("To Be Continued ");
+                    tbcLabel.getStyleClass().add("end-of-day-label");
+
+                    Button exitButton = new Button("Continue");
+                    exitButton.getStyleClass().add("continue-button");
+
+                    exitButton.setStyle("-fx-text-fill: white");
+
+
+                    tbcLayout.getChildren().addAll(tbcLabel, exitButton);
+
+                    Scene endOfDayScene = new Scene(tbcLayout, 400, 200);
+                    endOfDayScene.getStylesheets().add("StyleSheet.css");
+                    stage.setScene(endOfDayScene);
+                    stage.show();
+                    showGameOverScreen();
+                }
+                else {
+                    showEndOfDayScreen();
+                }
             }
+
             centerVBox = null;
             gameplay = new Days(currentDay, currentPatient);
             SetLayout(stage);
+
         });
 
         rightSideVBox.getChildren().add(continueButton);

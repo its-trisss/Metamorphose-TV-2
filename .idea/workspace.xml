@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f832f447-85bf-4080-b066-8a607e5aff19" name="Changes" comment="Got the background music working" />
+    <list default="true" id="f832f447-85bf-4080-b066-8a607e5aff19" name="Changes" comment="Added the missing files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Days.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Days.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/StyleSheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StyleSheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/aria.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/aria.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/face.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/finn.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/finn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/head.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/lena.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/lena.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/miles.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/miles.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,6 +156,7 @@
       <workItem from="1712864193225" duration="104000" />
       <workItem from="1712864979731" duration="241000" />
       <workItem from="1713824477590" duration="4728000" />
+      <workItem from="1713892929046" duration="5100000" />
     </task>
     <task id="LOCAL-00001" summary="Created the starting screen with a temporary background">
       <option name="closed" value="true" />
@@ -249,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713828293840</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added the missing files">
+      <option name="closed" value="true" />
+      <created>1713893300272</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1713893300272</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +318,17 @@
     <MESSAGE value="Finished Day 1" />
     <MESSAGE value="Changed the main menu background" />
     <MESSAGE value="Got the background music working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got the background music working" />
+    <MESSAGE value="Added the missing files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the missing files" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="6" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

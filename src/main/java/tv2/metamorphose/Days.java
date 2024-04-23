@@ -6,11 +6,11 @@ public class Days {
     String dialogue = "";
     String[] symptoms = {""};
     String beginDayDialogue = "";
-    String characterImage = "";
-    String armImage = "";
-    String headImage = "";
-    String torsoImage = "";
-    String legImage = "";
+    String characterImage = "./character.png";
+    String armImage = "./arms.png";
+    String headImage = "./fillerImage.png";
+    String torsoImage = "./torso.png";
+    String legImage = "./legs.png";
 
 
     Days(int day, int patientNum) {
@@ -22,18 +22,14 @@ public class Days {
 
         }
         else if (day == 2) {
+            beginDayDialogue = "Do you ever wonder whether or not these diagnoses actually help anyone?";
             Day2(patientNum);
         }
-        else {
-            Day3(patientNum);
-        }
-
     }
 
     void Day1(int patientNum) {
         // Patient 1 Lena Rosario
         if (patientNum == 1) {
-            // TODO: Insert first cutscene
             LenaRosario();
         }
         else if (patientNum == 2) {
@@ -52,24 +48,20 @@ public class Days {
 
     void Day2(int patientNum) {
         if (patientNum == 6) {
-
+            RajPatel();
         }
         else if (patientNum == 7) {
-
+            AlexaKnight();
         }
         else if (patientNum == 8) {
-
+            SloanCameron();
         }
         else if (patientNum == 9) {
-
+            IvySterling();
         }
         else if (patientNum == 10) {
-
+            JadeLi();
         }
-    }
-
-    void Day3(int patientNum) {
-
     }
 
     void LenaRosario() {
@@ -81,7 +73,7 @@ public class Days {
 
         //TODO: Change this
         characterImage = "/lena.png";
-        headImage = "/face.png";
+        headImage = "/lenaHead.png";
         armImage = "/arms.png";
         torsoImage = "/torso.png";
         legImage = "/legs.png";
@@ -96,7 +88,7 @@ public class Days {
 
         //TODO: Change this
         characterImage = "/miles.png";
-        headImage = "/face.png";
+        headImage = "/milesHead.png";
         armImage = "/arms.png";
         torsoImage = "/torso.png";
         legImage = "/legs.png";
@@ -112,7 +104,7 @@ public class Days {
 
         //TODO: Change this
         characterImage = "/aria.png";
-        headImage = "/face.png";
+        headImage = "/ariaHead.png";
         armImage = "/arms.png";
         torsoImage = "/torso.png";
         legImage = "/legs.png";
@@ -127,7 +119,7 @@ public class Days {
 
         //TODO: Change this
         characterImage = "/finn.png";
-        headImage = "/face.png";
+        headImage = "/finnHead.png";
         armImage = "/arms.png";
         torsoImage = "/torso.png";
         legImage = "/legs.png";
@@ -143,7 +135,7 @@ public class Days {
 
         //TODO: Change this
         characterImage = "/arjun.png";
-        headImage = "/face.png";
+        headImage = "/arjunHead.png";
         armImage = "/arms.png";
         torsoImage = "/torso.png";
         legImage = "/legs.png";
@@ -151,4 +143,81 @@ public class Days {
         buttonName = "Clock Out";
     }
 
+    void RajPatel() {
+        name = "Raj Patel";
+        symptoms = new String[]{"Low Grade Fever", "Body Tremors", "Major Skin Rashes", "Swollen Limbs", "Skin Abscesses", "Weakness", "Cold Sores", "Visible Veins", "Holes in Skin"};
+        dialogue = "Good morning! I have been feeling pretty weak lately, as well as I’ve been shaky, and I think I may have a slight fever";
+
+        //TODO: Change this
+        characterImage = "/lena.png";
+        headImage = "/lenaHead.png";
+        armImage = "/arms.png";
+        torsoImage = "/torso.png";
+        legImage = "/legs.png";
+
+        buttonName = "Next Patient";
+    }
+
+    void AlexaKnight() {
+        name = "Alexa Knight";
+        symptoms = new String[]{"General Weakness", "Loss of Appetite", "High Grade Fever", "Body Tremors", "Open Sores", "Cold Sores", "Swollen Limbs", "Visible Veins", "Skin Abscesses", "Blood Shot Eyes"};
+        dialogue = "Mornin’! Nice to see a new doctor in town, I’ve been recently dealing with some general weakness loss of appetite, and pretty high fever, and i believe that's whats making me super shaky";
+
+        //TODO: Change this
+        characterImage = "/miles.png";
+        headImage = "/milesHead.png";
+        armImage = "/arms.png";
+        torsoImage = "/torso.png";
+        legImage = "/legs.png";
+
+        buttonName = "Next Patient";
+    }
+
+    void SloanCameron() {
+        name = "Sloan Cameron";
+        symptoms = new String[]{"High Grade Fever", "Body Tremors", "Loss of Appetite", "Weakness", "Confusion",
+                "Bloodshot Eyes", "Skin Abscesses", "Skin Warts", "Small Rashes", "Visible Veins"};
+        dialogue = "Afternoon, I've been struggling with some shakiness and weakness, as well as some confusion and a rather high fever.";
+
+        //TODO: Change this
+        characterImage = "/aria.png";
+        headImage = "/ariaHead.png";
+        armImage = "/arms.png";
+        torsoImage = "/torso.png";
+        legImage = "/legs.png";
+
+        buttonName = "Next Patient";
+    }
+
+    void IvySterling() {
+        name = "Ivy Sterling";
+        symptoms = new String[]{"High Grade Fever", "Body Tremors", "Weakness", "Bloodshot Eyes", "Skin Warts",
+                "Visible Veins", "Open Sores", "Skin Gashes", "Swollen Limbs", "Cold Sores"};
+        dialogue = "I've been struggling to stand honestly, very weak and shaky, and i feel like i'm running a pretty high fever";
+
+        //TODO: Change this
+        characterImage = "/aria.png";
+        headImage = "/ariaHead.png";
+        armImage = "/arms.png";
+        torsoImage = "/torso.png";
+        legImage = "/legs.png";
+
+        buttonName = "Next Patient";
+    }
+
+    void JadeLi() {
+        name = "Jade Li";
+        symptoms = new String[]{"High Grade Fever", "Headache", "Loss of Appetite", "Weakness",
+                "Visible Veins", "Open Sores", "Swollen Limbs", "Hair Loss", "Skin Abscesses", "Cracked Fingernails"};
+        dialogue = "I’ve been pretty weak lately, it's been hard to eat and move and I believe I may be running a fever";
+
+        //TODO: Change this
+        characterImage = "/arjun.png";
+        headImage = "/arjunHead.png";
+        armImage = "/arms.png";
+        torsoImage = "/torso.png";
+        legImage = "/legs.png";
+
+        buttonName = "Clock Out";
+    }
 }

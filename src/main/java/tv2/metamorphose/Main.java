@@ -6,15 +6,12 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-
-
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -105,19 +102,29 @@ public class Main extends Application {
         tutorialLayout.setAlignment(Pos.CENTER);
         tutorialLayout.setPadding(new Insets(50));
 
+        tutorialLayout.getStyleClass().add("dialogueLabel");
+
         Label instructionLabel = new Label("Tutorial Instructions:");
         instructionLabel.setStyle("-fx-font-weight: bold;");
+
+        instructionLabel.setStyle("-fx-text-fill: white;");
 
         Label instructionContent = new Label("1. Use the body buttons to select different body parts.\n" +
                 "2. Click on each body part to view symptoms.\n" +
                 "3. Check the symptom checklist on the right side of the screen.\n" +
                 "4. Continue exploring until you're ready to start the game.");
 
+        instructionContent.setStyle("-fx-text-fill: white;");
+
         Label dialogueLabel = new Label("Dialogue Box: ");
         dialogueLabel.setStyle("-fx-font-weight: bold;");
+        dialogueLabel.setStyle("-fx-text-fill: white;");
+
 
         Label dialogueContent = new Label("The dialogue box provides information about collected symptoms " +
                 "and instructions on how to proceed with the game.");
+
+        dialogueContent.setStyle("-fx-text-fill: white;");
 
         Button startGameButton = new Button("Start Day");
         startGameButton.setOnAction(event -> {
@@ -130,7 +137,10 @@ public class Main extends Application {
                 startGameButton
         );
 
+        tutorialLayout.setStyle("-fx-background-color: black");
+
         Scene tutorialScene = new Scene(tutorialLayout, 800, 600);
+
         stage.setScene(tutorialScene);
     }
 
