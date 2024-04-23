@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f832f447-85bf-4080-b066-8a607e5aff19" name="Changes" comment="Got the background music working" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="module-info" />
+        <option value="CSS File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;its-trisss&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="6c227c4c-5c68-410c-9618-37f9b30e99c7" />
+        <option name="url" value="https://github.com/its-trisss/Metamorphose-TV-2.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/metamorphose/Main.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="KubernetesApiProvider">{
+    &quot;isMigrated&quot;: true
+    }</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+    &quot;associatedIndex&quot;: 3
+    }</component>
+  <component name="ProjectId" id="2c37DFYSFER8juIO7RBiPH7cz1G" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.HelloApplication.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/admin/Desktop/Capstone/TV-2",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.52040815",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Tristan\Desktop\School\Capstone\Metamorphose\src\main\java\com\example\metamorphose" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tristan\Desktop\School\Capstone\Metamorphose\src\main\resources" />
+      <recent name="C:\Users\Tristan\Desktop\School\Capstone\Metamorphose\src\main\java\com\example\metamorphose" />
+      <recent name="C:\Users\Tristan\Desktop\School\Capstone\Metamorphose\src\main\resources\com\example\metamorphose" />
+      <recent name="C:\Users\Tristan\Desktop\School\Capstone\Metamorphose" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.metamorphose" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-f644763e9732-c0c073db" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f832f447-85bf-4080-b066-8a607e5aff19" name="Changes" comment="" />
+      <created>1707328288742</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707328288742</updated>
+      <workItem from="1707328289805" duration="4909000" />
+      <workItem from="1707422025902" duration="5754000" />
+      <workItem from="1707583090405" duration="610000" />
+      <workItem from="1708037653605" duration="675000" />
+      <workItem from="1708456464517" duration="3978000" />
+      <workItem from="1709064214606" duration="341000" />
+      <workItem from="1709064567627" duration="4749000" />
+      <workItem from="1709134524227" duration="3707000" />
+      <workItem from="1709145882371" duration="4279000" />
+      <workItem from="1712677667099" duration="11183000" />
+      <workItem from="1712850702070" duration="1245000" />
+      <workItem from="1712864193225" duration="104000" />
+      <workItem from="1712864979731" duration="241000" />
+      <workItem from="1713824477590" duration="4728000" />
+    </task>
+    <task id="LOCAL-00001" summary="Created the starting screen with a temporary background">
+      <option name="closed" value="true" />
+      <created>1707332636272</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707332636272</updated>
+    </task>
+    <task id="LOCAL-00002" summary="deleted the fmxl file">
+      <option name="closed" value="true" />
+      <created>1707333035241</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707333035241</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Changed the play button to have a transparent background">
+      <option name="closed" value="true" />
+      <created>1707422577845</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707422577845</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Working on the buttons">
+      <option name="closed" value="true" />
+      <created>1708038061099</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708038061099</updated>
+    </task>
+    <task id="LOCAL-00005" summary="idk what this is">
+      <option name="closed" value="true" />
+      <created>1708038231885</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708038231885</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Finished the starting screen. Starting to work on how to layout the actual game GUI">
+      <option name="closed" value="true" />
+      <created>1708461747699</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708461747699</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Finished the Left side of the screen. Just need to add images when available.">
+      <option name="closed" value="true" />
+      <created>1709137438675</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709137438675</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Started working on the center section of the screen. Cannot get it to align properly rn.">
+      <option name="closed" value="true" />
+      <created>1709138230784</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709138230784</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Moved Vanessa's code over to the new repo">
+      <option name="closed" value="true" />
+      <created>1712253716440</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712253716440</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Moved Vanessa's code over to the new repo">
+      <option name="closed" value="true" />
+      <created>1712684720439</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712684720439</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Finished Day 1">
+      <option name="closed" value="true" />
+      <created>1712689814972</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1712689814972</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Changed the main menu background">
+      <option name="closed" value="true" />
+      <created>1712865213169</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712865213169</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Got the background music working">
+      <option name="closed" value="true" />
+      <created>1713828293840</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1713828293840</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Created the starting screen with a temporary background" />
+    <MESSAGE value="deleted the fmxl file" />
+    <MESSAGE value="Changed the play button to have a transparent background" />
+    <MESSAGE value="Working on the buttons" />
+    <MESSAGE value="idk what this is" />
+    <MESSAGE value="Finished the starting screen. Starting to work on how to layout the actual game GUI" />
+    <MESSAGE value="Finished the Left side of the screen. Just need to add images when available." />
+    <MESSAGE value="Started working on the center section of the screen. Cannot get it to align properly rn." />
+    <MESSAGE value="Moved Vanessa's code over to the new repo" />
+    <MESSAGE value="Finished Day 1" />
+    <MESSAGE value="Changed the main menu background" />
+    <MESSAGE value="Got the background music working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got the background music working" />
+  </component>
+</project>
