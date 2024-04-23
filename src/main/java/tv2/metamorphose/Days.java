@@ -1,25 +1,23 @@
 package tv2.metamorphose;
 
 public class Days {
-    String name = "";
-    String buttonName = "";
-    String dialogue = "";
-    String[] symptoms = {""};
-    String beginDayDialogue = "";
-    String characterImage = "./character.png";
-    String armImage = "./arms.png";
-    String headImage = "./fillerImage.png";
-    String torsoImage = "./torso.png";
-    String legImage = "./legs.png";
+    public String name = "";
+    public String buttonName = "";
+    public String dialogue = "";
+    public String[] symptoms = {""};
+    public String beginDayDialogue = "";
+    public String characterImage = "./character.png";
+    public String armImage = "./arms.png";
+    public String headImage = "./fillerImage.png";
+    public String torsoImage = "./torso.png";
+    public String legImage = "./legs.png";
 
 
-    Days(int day, int patientNum) {
+    public Days(int day, int patientNum) {
         if (day == 1) {
             beginDayDialogue = "The new assignments always suck, new place no ones heard from in years and all of a sudden lets go check on these whinos down in the sticks.\n " +
                     "It's been a few months since I've been able to practice though, so I suppose it's about time I get back into it, even if it is only for the next three days";
-
             Day1(patientNum);
-
         }
         else if (day == 2) {
             beginDayDialogue = "Do you ever wonder whether or not these diagnoses actually help anyone?";
@@ -27,8 +25,7 @@ public class Days {
         }
     }
 
-    void Day1(int patientNum) {
-        // Patient 1 Lena Rosario
+    private void Day1(int patientNum) {
         if (patientNum == 1) {
             LenaRosario();
         }
@@ -46,7 +43,7 @@ public class Days {
         }
     }
 
-    void Day2(int patientNum) {
+    private void Day2(int patientNum) {
         if (patientNum == 6) {
             RajPatel();
         }
@@ -64,7 +61,7 @@ public class Days {
         }
     }
 
-    void LenaRosario() {
+    private void LenaRosario() {
         name = "Lena Rosario";
         symptoms = new String[]{"Low Grade Fever", "Headache", "Loss of Appetite", "Body Tremors", "Confusion",
                 "Small Rashes", "Skin Warts", "Skin Bumps", "Swollen Limbs", "Large Skin Lesion"};
@@ -81,7 +78,7 @@ public class Days {
         buttonName = "Next Patient";
     }
 
-    void MilesJohnson() {
+    private void MilesJohnson() {
         name = "Miles Johnson";
         symptoms = new String[]{"Confusion", "Loss of Appetite", "Low Grade Fever", "Headache", "Small Rashes", "Skin Bumps", "Cold Sores", "Swollen Limbs", "Cracked Fingernails", "Skin Abscesses"};
         dialogue = "Hey doc, I have not been eatin’ well, and I’ve had a pretty mild headache, but honestly I couldn’t tell you how long though it's kinda hard to remember.";
@@ -96,7 +93,7 @@ public class Days {
         buttonName = "Next Patient";
     }
 
-    void AriaFoster() {
+    private void AriaFoster() {
         name = "Aria Foster";
         symptoms = new String[]{"High Grade Fever", "Headache", "Loss of Appetite", "Body Tremors",
                 "Small Rashes", "Skin Abscesses", "Skin Bumps", "Swollen Limbs", "Cold Sores", "Cracked Fingernails"};
@@ -112,7 +109,7 @@ public class Days {
         buttonName = "Next Patient";
     }
 
-    void FinnODonoghue() {
+    private void FinnODonoghue() {
         name = "Finn O'Donoghue";
         symptoms = new String[]{"Confusion", "Loss of Appetite", "Body Tremors", "Headache", "Small Rashes", "Skin Bumps", "Cold Sores", "Swollen Limbs", "Cracked Fingernails", "Skin Warts"};
         dialogue = "Doc, imr feeln terble, em not hngry, and head hurts, and em shky.";
@@ -127,7 +124,7 @@ public class Days {
         buttonName = "Next Patient";
     }
 
-    void ArjunSignh() {
+    private void ArjunSignh() {
         name = "Arjun Signh";
         symptoms = new String[]{"Low Grade Fever", "Headache", "Loss of Appetite", "Weakness",
                 "Bloody Nose", "Skin Lesions", "Swollen Limbs", "Cold Sores", "Cracked Fingernails"};
@@ -143,7 +140,7 @@ public class Days {
         buttonName = "Clock Out";
     }
 
-    void RajPatel() {
+    private void RajPatel() {
         name = "Raj Patel";
         symptoms = new String[]{"Low Grade Fever", "Body Tremors", "Major Skin Rashes", "Swollen Limbs", "Skin Abscesses", "Weakness", "Cold Sores", "Visible Veins", "Holes in Skin"};
         dialogue = "Good morning! I have been feeling pretty weak lately, as well as I’ve been shaky, and I think I may have a slight fever";
@@ -158,7 +155,7 @@ public class Days {
         buttonName = "Next Patient";
     }
 
-    void AlexaKnight() {
+    private void AlexaKnight() {
         name = "Alexa Knight";
         symptoms = new String[]{"General Weakness", "Loss of Appetite", "High Grade Fever", "Body Tremors", "Open Sores", "Cold Sores", "Swollen Limbs", "Visible Veins", "Skin Abscesses", "Blood Shot Eyes"};
         dialogue = "Mornin’! Nice to see a new doctor in town, I’ve been recently dealing with some general weakness loss of appetite, and pretty high fever, and i believe that's whats making me super shaky";
@@ -173,7 +170,7 @@ public class Days {
         buttonName = "Next Patient";
     }
 
-    void SloanCameron() {
+    private void SloanCameron() {
         name = "Sloan Cameron";
         symptoms = new String[]{"High Grade Fever", "Body Tremors", "Loss of Appetite", "Weakness", "Confusion",
                 "Bloodshot Eyes", "Skin Abscesses", "Skin Warts", "Small Rashes", "Visible Veins"};
@@ -189,7 +186,7 @@ public class Days {
         buttonName = "Next Patient";
     }
 
-    void IvySterling() {
+    private void IvySterling() {
         name = "Ivy Sterling";
         symptoms = new String[]{"High Grade Fever", "Body Tremors", "Weakness", "Bloodshot Eyes", "Skin Warts",
                 "Visible Veins", "Open Sores", "Skin Gashes", "Swollen Limbs", "Cold Sores"};
@@ -205,7 +202,7 @@ public class Days {
         buttonName = "Next Patient";
     }
 
-    void JadeLi() {
+    private void JadeLi() {
         name = "Jade Li";
         symptoms = new String[]{"High Grade Fever", "Headache", "Loss of Appetite", "Weakness",
                 "Visible Veins", "Open Sores", "Swollen Limbs", "Hair Loss", "Skin Abscesses", "Cracked Fingernails"};

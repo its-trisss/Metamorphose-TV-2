@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f832f447-85bf-4080-b066-8a607e5aff19" name="Changes" comment="Added the logic for the second day. Also added in a boar screaming">
+    <list default="true" id="f832f447-85bf-4080-b066-8a607e5aff19" name="Changes" comment="Added the dependency for javafx-media">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/WildBoar1.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Days.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Days.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Patients.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/WildBoar.m4a" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +66,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
     &quot;associatedIndex&quot;: 3
@@ -147,7 +153,7 @@
       <workItem from="1712864979731" duration="241000" />
       <workItem from="1713824477590" duration="4728000" />
       <workItem from="1713892929046" duration="5239000" />
-      <workItem from="1713910356413" duration="970000" />
+      <workItem from="1713910356413" duration="4429000" />
     </task>
     <task id="LOCAL-00001" summary="Created the starting screen with a temporary background">
       <option name="closed" value="true" />
@@ -269,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713898142085</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added the dependency for javafx-media">
+      <option name="closed" value="true" />
+      <created>1713911444975</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1713911444975</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,12 +333,13 @@
     <MESSAGE value="Got the background music working" />
     <MESSAGE value="Added the missing files" />
     <MESSAGE value="Added the logic for the second day. Also added in a boar screaming" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the logic for the second day. Also added in a boar screaming" />
+    <MESSAGE value="Added the dependency for javafx-media" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the dependency for javafx-media" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
+        <breakpoint enabled="true" log-message="true" type="java-exception">
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />
           <option name="timeStamp" value="6" />
         </breakpoint>

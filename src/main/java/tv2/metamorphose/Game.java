@@ -40,6 +40,7 @@ public class Game {
     }
 
     private void SetLayout(Stage primaryStage) {
+        System.out.println("In SetLayout " + gameplay.name);
         symptoms = gameplay.symptoms;
 
         stage = primaryStage;
@@ -98,6 +99,7 @@ public class Game {
     }
 
     private void showEndOfDayScreen() {
+        System.out.println("End of Day " + currentDay);
         VBox endOfDayLayout = new VBox(10);
         endOfDayLayout.setAlignment(Pos.CENTER);
         endOfDayLayout.getStyleClass().add("end-of-day-layout");
@@ -119,8 +121,9 @@ public class Game {
         continueButton.setOnAction(event -> {
             currentDay++;
             if (currentDay <= 2) {
-                stage.setScene(mainGameScene);
-                stage.show();
+                gameplay = new Days(currentDay, currentPatient);
+                System.out.println("Character: " + gameplay.name);
+                SetLayout(stage);
             } else {
                 showGameOverScreen();
             }
@@ -131,16 +134,10 @@ public class Game {
         VBox gameOverLayout = new VBox(10);
         gameOverLayout.setAlignment(Pos.CENTER);
 
-        Path path = Paths.get("src", "main", "resources", "WildBoar.m4a");
+        Path path = Paths.get("src", "main", "resources", "WildBoar1.mp3");
         Media media = new Media(path.toUri().toString());
         MediaPlayer mediaPlayer = new MediaPlayer(media);
 
-        mediaPlayer.setOnEndOfMedia(new Runnable() {
-            @Override
-            public void run() {
-                mediaPlayer.seek(Duration.ZERO);
-            }
-        });
         mediaPlayer.play();
 
         Label gameOverLabel = new Label("You've got boar herpes");
@@ -304,8 +301,8 @@ public class Game {
 
         continueButton.setOnAction(event -> {
             ++currentPatient;
-
             if (gameplay.buttonName == "Clock Out") {
+                System.out.println("In Clock Out " + gameplay.name);
                 if (currentDay == 2) {
                     VBox tbcLayout = new VBox(10);
                     tbcLayout.setAlignment(Pos.CENTER);
@@ -329,13 +326,17 @@ public class Game {
                     showGameOverScreen();
                 }
                 else {
+                    centerVBox = null;
                     showEndOfDayScreen();
                 }
+
+            }
+            else {
+                centerVBox = null;
+                gameplay = new Days(currentDay, currentPatient);
+                SetLayout(stage);
             }
 
-            centerVBox = null;
-            gameplay = new Days(currentDay, currentPatient);
-            SetLayout(stage);
 
         });
 

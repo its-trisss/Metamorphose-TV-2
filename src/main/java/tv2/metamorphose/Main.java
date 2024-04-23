@@ -15,7 +15,6 @@ import javafx.util.Duration;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-
 public class Main extends Application {
     public Path path = Paths.get("src", "main", "resources", "backgroundMusic.mp3");
     public Media media = new Media(path.toUri().toString());
