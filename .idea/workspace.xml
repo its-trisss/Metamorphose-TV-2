@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f832f447-85bf-4080-b066-8a607e5aff19" name="Changes" comment="Added the dependency for javafx-media">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/WildBoar1.mp3" afterDir="false" />
+    <list default="true" id="f832f447-85bf-4080-b066-8a607e5aff19" name="Changes" comment="Got the days working properly">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Days.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Days.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Patients.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/WildBoar.m4a" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,35 +76,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.HelloApplication.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/admin/Desktop/Capstone/TV-2",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.4218391",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/admin/Desktop/Capstone/TV-2&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.4218391&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Tristan\Desktop\School\Capstone\Metamorphose\src\main\java\com\example\metamorphose" />
@@ -153,7 +150,8 @@
       <workItem from="1712864979731" duration="241000" />
       <workItem from="1713824477590" duration="4728000" />
       <workItem from="1713892929046" duration="5239000" />
-      <workItem from="1713910356413" duration="4429000" />
+      <workItem from="1713910356413" duration="4742000" />
+      <workItem from="1714057156676" duration="880000" />
     </task>
     <task id="LOCAL-00001" summary="Created the starting screen with a temporary background">
       <option name="closed" value="true" />
@@ -283,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713911444975</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Got the days working properly">
+      <option name="closed" value="true" />
+      <created>1713914944311</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1713914944311</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +340,8 @@
     <MESSAGE value="Added the missing files" />
     <MESSAGE value="Added the logic for the second day. Also added in a boar screaming" />
     <MESSAGE value="Added the dependency for javafx-media" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the dependency for javafx-media" />
+    <MESSAGE value="Got the days working properly" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got the days working properly" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

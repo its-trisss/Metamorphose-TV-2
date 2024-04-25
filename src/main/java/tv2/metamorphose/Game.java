@@ -14,7 +14,6 @@ import javafx.scene.layout.VBox;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
-import javafx.util.Duration;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Set;
@@ -187,19 +186,13 @@ public class Game {
 
     private HBox BodyButtons() {
         Button armsButton = new Button("Arms");
-        Button torsoButton = new Button("Torso");
         Button legsButton = new Button("Legs");
 
         armsButton.setId("bodyButtons");
-        torsoButton.setId("bodyButtons");
         legsButton.setId("bodyButtons");
 
         armsButton.setOnAction(actionEvent -> {
             BodyButtonAction(gameplay.armImage, "arms");
-        });
-
-        torsoButton.setOnAction(actionEvent -> {
-            BodyButtonAction(gameplay.torsoImage, "torso");
         });
 
         legsButton.setOnAction(actionEvent -> {
@@ -207,10 +200,9 @@ public class Game {
         });
 
         VBox armsButtonVBox = new VBox(armsButton);
-        VBox torsoButtonVBox = new VBox(torsoButton);
         VBox legsButtonVBox = new VBox(legsButton);
 
-        HBox hBox1 = new HBox(armsButtonVBox, torsoButtonVBox, legsButtonVBox);
+        HBox hBox1 = new HBox(armsButtonVBox, legsButtonVBox);
         hBox1.setId("blackBox");
         hBox1.setAlignment(Pos.BOTTOM_CENTER);
         hBox1.setSpacing(10);

@@ -60,6 +60,8 @@ public class Main extends Application {
 
         Button playButton = new Button("Play");
         playButton.setId("playButton");
+        playButton.setLayoutX(1000);
+
         playButton.setOnAction(event -> {
             try {
                 System.out.println("Play button clicked");

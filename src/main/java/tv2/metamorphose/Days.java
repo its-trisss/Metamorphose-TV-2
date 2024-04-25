@@ -9,7 +9,6 @@ public class Days {
     public String characterImage = "./character.png";
     public String armImage = "./arms.png";
     public String headImage = "./fillerImage.png";
-    public String torsoImage = "./torso.png";
     public String legImage = "./legs.png";
 
 
@@ -72,7 +71,6 @@ public class Days {
         characterImage = "/lena.png";
         headImage = "/lenaHead.png";
         armImage = "/arms.png";
-        torsoImage = "/torso.png";
         legImage = "/legs.png";
 
         buttonName = "Next Patient";
@@ -87,7 +85,6 @@ public class Days {
         characterImage = "/miles.png";
         headImage = "/milesHead.png";
         armImage = "/arms.png";
-        torsoImage = "/torso.png";
         legImage = "/legs.png";
 
         buttonName = "Next Patient";
@@ -103,7 +100,6 @@ public class Days {
         characterImage = "/aria.png";
         headImage = "/ariaHead.png";
         armImage = "/arms.png";
-        torsoImage = "/torso.png";
         legImage = "/legs.png";
 
         buttonName = "Next Patient";
@@ -118,7 +114,6 @@ public class Days {
         characterImage = "/finn.png";
         headImage = "/finnHead.png";
         armImage = "/arms.png";
-        torsoImage = "/torso.png";
         legImage = "/legs.png";
 
         buttonName = "Next Patient";
@@ -134,7 +129,6 @@ public class Days {
         characterImage = "/arjun.png";
         headImage = "/arjunHead.png";
         armImage = "/arms.png";
-        torsoImage = "/torso.png";
         legImage = "/legs.png";
 
         buttonName = "Clock Out";
@@ -149,7 +143,6 @@ public class Days {
         characterImage = "/lena.png";
         headImage = "/lenaHead.png";
         armImage = "/arms.png";
-        torsoImage = "/torso.png";
         legImage = "/legs.png";
 
         buttonName = "Next Patient";
@@ -164,7 +157,6 @@ public class Days {
         characterImage = "/miles.png";
         headImage = "/milesHead.png";
         armImage = "/arms.png";
-        torsoImage = "/torso.png";
         legImage = "/legs.png";
 
         buttonName = "Next Patient";
@@ -180,7 +172,6 @@ public class Days {
         characterImage = "/aria.png";
         headImage = "/ariaHead.png";
         armImage = "/arms.png";
-        torsoImage = "/torso.png";
         legImage = "/legs.png";
 
         buttonName = "Next Patient";
@@ -196,7 +187,6 @@ public class Days {
         characterImage = "/aria.png";
         headImage = "/ariaHead.png";
         armImage = "/arms.png";
-        torsoImage = "/torso.png";
         legImage = "/legs.png";
 
         buttonName = "Next Patient";
@@ -212,7 +202,6 @@ public class Days {
         characterImage = "/arjun.png";
         headImage = "/arjunHead.png";
         armImage = "/arms.png";
-        torsoImage = "/torso.png";
         legImage = "/legs.png";
 
         buttonName = "Clock Out";
