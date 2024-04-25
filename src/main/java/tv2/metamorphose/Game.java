@@ -11,11 +11,8 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
-import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Set;
 
 public class Game {
@@ -24,22 +21,18 @@ public class Game {
     private VBox rightSideScreen;
     private VBox rightSideVBox;
     private VBox centerVBox;
-    private  Set<String> discoveredSymptoms;
     private Label dialogueLabel;
     private VBox characterSelection;
     private int currentDay = 1;
-
     private int currentPatient = 1;
-
-    private String patient;
     private String[] symptoms;
     Days gameplay = new Days(currentDay, currentPatient);
+
     public Game(Stage primaryStage, MediaPlayer mediaPlayer) {
         showBeginningOfDayScreen(primaryStage);
     }
 
     private void SetLayout(Stage primaryStage) {
-        System.out.println("In SetLayout " + gameplay.name);
         symptoms = gameplay.symptoms;
 
         stage = primaryStage;
@@ -72,11 +65,11 @@ public class Game {
         beginOfDayLayout.setAlignment(Pos.CENTER);
         beginOfDayLayout.getStyleClass().add("end-of-day-layout");
 
-        Image doctorImage = new Image("/boar.png");
+        Image doctorImage = new Image("/doctor.png");
         ImageView doctorImageView = new ImageView(doctorImage);
-        doctorImageView.setFitWidth(400);
-        doctorImageView.setFitHeight(600);
-        doctorImageView.setPreserveRatio(true);
+        doctorImageView.setFitWidth(850);
+        doctorImageView.setFitHeight(500);
+        doctorImageView.setStyle("-fx-border-color: black");
         doctorImageView.getStyleClass().add("head-image");
 
         dialogueLabel = new Label(gameplay.beginDayDialogue);
@@ -98,7 +91,6 @@ public class Game {
     }
 
     private void showEndOfDayScreen() {
-        System.out.println("End of Day " + currentDay);
         VBox endOfDayLayout = new VBox(10);
         endOfDayLayout.setAlignment(Pos.CENTER);
         endOfDayLayout.getStyleClass().add("end-of-day-layout");
@@ -106,7 +98,7 @@ public class Game {
         Label endOfDayLabel = new Label("End of Day " + currentDay);
         endOfDayLabel.getStyleClass().add("end-of-day-label");
 
-        Button continueButton = new Button("Continue");
+        Button continueButton = new Button("Next Day");
         continueButton.getStyleClass().add("continue-button");
         continueButton.setStyle("-fx-text-fill: white");
 
@@ -121,7 +113,6 @@ public class Game {
             currentDay++;
             if (currentDay <= 2) {
                 gameplay = new Days(currentDay, currentPatient);
-                System.out.println("Character: " + gameplay.name);
                 SetLayout(stage);
             } else {
                 showGameOverScreen();
@@ -130,29 +121,25 @@ public class Game {
     }
 
     private void showGameOverScreen() {
-        VBox gameOverLayout = new VBox(10);
-        gameOverLayout.setAlignment(Pos.CENTER);
+        VBox tbcLayout = new VBox(10);
+        tbcLayout.setAlignment(Pos.CENTER);
+        tbcLayout.getStyleClass().add("end-of-day-layout");
 
-        Path path = Paths.get("src", "main", "resources", "WildBoar1.mp3");
-        Media media = new Media(path.toUri().toString());
-        MediaPlayer mediaPlayer = new MediaPlayer(media);
+        Label tbcLabel = new Label("To Be Continued ");
+        tbcLabel.getStyleClass().add("end-of-day-label");
 
-        mediaPlayer.play();
-
-        Label gameOverLabel = new Label("You've got boar herpes");
-        gameOverLabel.getStyleClass().add("boar-herpes");
         Button returnToMainMenuButton = new Button("Return to Main Menu");
         returnToMainMenuButton.getStyleClass().add("return-main-menu");
-        gameOverLayout.getStyleClass().add("game-over");
-        gameOverLayout.getChildren().addAll(gameOverLabel, returnToMainMenuButton);
+        returnToMainMenuButton.setStyle("-fx-text-fill: white");
 
-        Scene gameOverScene = new Scene(gameOverLayout, 400, 200);
-        gameOverScene.getStylesheets().add("StyleSheet.css");
-        stage.setScene(gameOverScene);
+        tbcLayout.getChildren().addAll(tbcLabel, returnToMainMenuButton);
+
+        Scene endOfDayScene = new Scene(tbcLayout, 400, 200);
+        endOfDayScene.getStylesheets().add("StyleSheet.css");
+        stage.setScene(endOfDayScene);
         stage.show();
 
         returnToMainMenuButton.setOnAction(event -> {
-
             currentDay = 1;
 
             new Main().start(stage);
@@ -212,7 +199,6 @@ public class Game {
 
     private void BodyButtonAction(String imageUrl, String bodyPart) {
         ImageView imageView = new ImageView(new Image(imageUrl));
-//        imageView.setFitWidth(300);
         imageView.setFitHeight(550);
 
         VBox vBox = new VBox();
@@ -293,27 +279,7 @@ public class Game {
         continueButton.setOnAction(event -> {
             ++currentPatient;
             if (gameplay.buttonName == "Clock Out") {
-                System.out.println("In Clock Out " + gameplay.name);
                 if (currentDay == 2) {
-                    VBox tbcLayout = new VBox(10);
-                    tbcLayout.setAlignment(Pos.CENTER);
-                    tbcLayout.getStyleClass().add("end-of-day-layout");
-
-                    Label tbcLabel = new Label("To Be Continued ");
-                    tbcLabel.getStyleClass().add("end-of-day-label");
-
-                    Button exitButton = new Button("Continue");
-                    exitButton.getStyleClass().add("continue-button");
-
-                    exitButton.setStyle("-fx-text-fill: white");
-
-
-                    tbcLayout.getChildren().addAll(tbcLabel, exitButton);
-
-                    Scene endOfDayScene = new Scene(tbcLayout, 400, 200);
-                    endOfDayScene.getStylesheets().add("StyleSheet.css");
-                    stage.setScene(endOfDayScene);
-                    stage.show();
                     showGameOverScreen();
                 }
                 else {
@@ -327,8 +293,6 @@ public class Game {
                 gameplay = new Days(currentDay, currentPatient);
                 SetLayout(stage);
             }
-
-
         });
 
         rightSideVBox.getChildren().add(continueButton);

@@ -6,7 +6,6 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.effect.ColorAdjust;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
@@ -25,7 +24,6 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) {
-
         backgroundMusic();
 
         StackPane root = new StackPane();
@@ -55,19 +53,17 @@ public class Main extends Application {
 
 
     private void setupUI(StackPane root, Stage stage) {
-
-        AnchorPane a = new AnchorPane();
-        root.getChildren().add(a);
-        Rotate r = new Rotate(-15,0,0);
+        AnchorPane anchorPane = new AnchorPane();
+        root.getChildren().add(anchorPane);
+        Rotate rotate = new Rotate(-15,0,0);
 
         Button playButton = new Button("Start");
         playButton.setId("playButton");
         playButton.setLayoutX(765);
         playButton.setLayoutY(390);
-        playButton.getTransforms().add(r);
+        playButton.getTransforms().add(rotate);
         playButton.setOnAction(event -> {
             try {
-                System.out.println("Play button clicked");
                 showTutorial(stage);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -79,10 +75,9 @@ public class Main extends Application {
         optionButton.setStyle("-fx-pref-width: 285");
         optionButton.setLayoutX(780);
         optionButton.setLayoutY(450);
-        optionButton.getTransforms().add(r);
+        optionButton.getTransforms().add(rotate);
         optionButton.setOnAction(event -> {
             try {
-                System.out.println("Options label clicked");
                 SettingsScene settingsScene = new SettingsScene(stage);
                 stage.setScene(settingsScene.getSettingsScene());
             } catch (Exception e) {
@@ -94,20 +89,16 @@ public class Main extends Application {
         exitButton.setId("exitButton");
         exitButton.setLayoutX(820);
         exitButton.setLayoutY(520);
-        exitButton.getTransforms().add(r);
+        exitButton.getTransforms().add(rotate);
         exitButton.setOnAction(event -> {
             try {
-                System.out.println("Exit label clicked");
                 System.exit(0);
             } catch (Exception e) {
                 e.printStackTrace();
             }
         });
 
-        a.getChildren().addAll(playButton,optionButton,exitButton);
-
-//        vbox.getChildren().addAll(playButton, optionButton, exitButton);
-//        vbox.setSpacing(10);
+        anchorPane.getChildren().addAll(playButton,optionButton,exitButton);
     }
 
     private void showTutorial(Stage stage) {
@@ -115,11 +106,10 @@ public class Main extends Application {
         tutorialLayout.setAlignment(Pos.CENTER);
         tutorialLayout.setPadding(new Insets(50));
 
-        tutorialLayout.getStyleClass().add("dialogueLabel");
+        tutorialLayout.setId("dialogueLabel");
 
         Label instructionLabel = new Label("Tutorial Instructions:");
         instructionLabel.setStyle("-fx-font-weight: bold;");
-
         instructionLabel.setStyle("-fx-text-fill: white;");
 
         Label instructionContent = new Label("1. Use the body buttons to select different body parts.\n" +
@@ -156,7 +146,6 @@ public class Main extends Application {
 
         stage.setScene(tutorialScene);
     }
-
 
     public static void main(String[] args) {
         launch(args);

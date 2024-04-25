@@ -6,11 +6,10 @@ public class Days {
     public String dialogue = "";
     public String[] symptoms = {""};
     public String beginDayDialogue = "";
-    public String characterImage = "./character.png";
-    public String armImage = "./arms.png";
-    public String headImage = "./fillerImage.png";
-    public String legImage = "./legs.png";
-
+    public String characterImage = "";
+    public String armImage = "";
+    public String headImage = "";
+    public String legImage = "";
 
     public Days(int day, int patientNum) {
         if (day == 1) {
@@ -67,7 +66,6 @@ public class Days {
         dialogue = "Good morning! Sorry to bother you today, but I have had a low grade fever I think for the last few days, " +
                 "it's hard to remember how long its been. I’ve had a horrible headache, I haven’t been eating and I feel like my body is shaking a lot.";
 
-        //TODO: Change this
         characterImage = "/lena.png";
         headImage = "/lenaHead.png";
         armImage = "/lenaArms.png";
@@ -81,7 +79,6 @@ public class Days {
         symptoms = new String[]{"Confusion", "Loss of Appetite", "Low Grade Fever", "Headache", "Small Rashes", "Skin Bumps", "Cold Sores", "Swollen Limbs", "Cracked Fingernails", "Skin Abscesses"};
         dialogue = "Hey doc, I have not been eatin’ well, I could have sworn Ive been running a fever, and I’ve had a pretty mild headache, but honestly I couldn’t tell you how long though it's kinda hard to remember.";
 
-        //TODO: Change this
         characterImage = "/miles.png";
         headImage = "/milesHead.png";
         armImage = "/milesArms.png";
@@ -96,7 +93,6 @@ public class Days {
                 "Small Rashes", "Skin Abscesses", "Skin Bumps", "Swollen Limbs", "Cold Sores", "Cracked Fingernails"};
         dialogue = "Hey um yea, I have had a horrible headache, been running a pretty high fever for the last few days, haven’t been eating because of it, and I think I’ve been shaking.";
 
-        //TODO: Change this
         characterImage = "/aria.png";
         headImage = "/ariaHead.png";
         armImage = "/ariaArms.png";
@@ -110,7 +106,6 @@ public class Days {
         symptoms = new String[]{"Confusion", "Loss of Appetite", "Body Tremors", "Headache", "Small Rashes", "Skin Bumps", "Cold Sores", "Swollen Limbs", "Cracked Fingernails", "Skin Warts"};
         dialogue = "Doc, Imr feeln terble, em not hngry, and head hurts,I feeel lst ,and em shky.";
 
-        //TODO: Change this
         characterImage = "/finn.png";
         headImage = "/finnHead.png";
         armImage = "/finnArms.png";
@@ -125,7 +120,6 @@ public class Days {
                 "Bloody Nose", "Skin Lesions", "Swollen Limbs", "Cold Sores", "Cracked Fingernails"};
         dialogue = "Evening, sorry to be here so late but I just got off work, I’ve had a fever, a headache, haven’t been able to really eat, and it has been making me feel rather weak.";
 
-        //TODO: Change this
         characterImage = "/arjun.png";
         headImage = "/arjunHead.png";
         armImage = "/arjunArms.png";
@@ -139,11 +133,10 @@ public class Days {
         symptoms = new String[]{"Low Grade Fever", "Body Tremors", "Major Skin Rashes", "Swollen Limbs", "Skin Abscesses", "Weakness", "Cold Sores", "Visible Veins", "Holes in Skin"};
         dialogue = "Good morning! I have been feeling pretty weak lately, as well as I’ve been shaky, and I think I may have a slight fever";
 
-        //TODO: Change this
-        characterImage = "/lena.png";
-        headImage = "/lenaHead.png";
-        armImage = "/arms.png";
-        legImage = "/legs.png";
+        characterImage = "/raj.png";
+        headImage = "/rajHead.png";
+        armImage = "/rajArms.png";
+        legImage = "/rajLegs.png";
 
         buttonName = "Next Patient";
     }
@@ -153,11 +146,10 @@ public class Days {
         symptoms = new String[]{"Weakness", "Loss of Appetite", "High Grade Fever", "Body Tremors", "Open Sores", "Cold Sores", "Swollen Limbs", "Visible Veins", "Skin Abscesses", "Blood Shot Eyes"};
         dialogue = "Mornin’! Nice to see a new doctor in town, I’ve been recently dealing with some general weakness, loss of appetite, and pretty high fever, and I believe that's whats making me super shaky";
 
-        //TODO: Change this
-        characterImage = "/miles.png";
-        headImage = "/milesHead.png";
-        armImage = "/arms.png";
-        legImage = "/legs.png";
+        characterImage = "/alexa.png";
+        headImage = "/alexaHead.png";
+        armImage = "/alexaArms.png";
+        legImage = "/alexaLegs.png";
 
         buttonName = "Next Patient";
     }
@@ -168,11 +160,10 @@ public class Days {
                 "Bloodshot Eyes", "Skin Abscesses", "Skin Warts", "Small Rashes", "Visible Veins"};
         dialogue = "Howdy Hey! I've been struggling with some shakiness and weakness, as well as I have been confused and a rather high fever.";
 
-        //TODO: Change this
-        characterImage = "/aria.png";
-        headImage = "/ariaHead.png";
-        armImage = "/arms.png";
-        legImage = "/legs.png";
+        characterImage = "/sloan.png";
+        headImage = "/sloanHead.png";
+        armImage = "/sloanArms.png";
+        legImage = "/sloanLegs.png";
 
         buttonName = "Next Patient";
     }
@@ -183,11 +174,10 @@ public class Days {
                 "Visible Veins", "Open Sores", "Skin Gashes", "Swollen Limbs", "Cold Sores"};
         dialogue = "I've been struggling to stand honestly, very weak as well as shaky, and I feel like I'm running a pretty high fever";
 
-        //TODO: Change this
-        characterImage = "/aria.png";
-        headImage = "/ariaHead.png";
-        armImage = "/arms.png";
-        legImage = "/legs.png";
+        characterImage = "/ivy.png";
+        headImage = "/ivyHead.png";
+        armImage = "/ivyArms.png";
+        legImage = "/ivyLegs.png";
 
         buttonName = "Next Patient";
     }
@@ -198,11 +188,10 @@ public class Days {
                 "Visible Veins", "Open Sores", "Swollen Limbs", "Bloody Nose", "Skin Abscesses", "Cracked Fingernails"};
         dialogue = "I’ve been pretty weak lately, it's been hard to eat and move and I believe I may be running a fever";
 
-        //TODO: Change this
-        characterImage = "/arjun.png";
-        headImage = "/arjunHead.png";
-        armImage = "/arms.png";
-        legImage = "/legs.png";
+        characterImage = "/jade.png";
+        headImage = "/jadeHead.png";
+        armImage = "/jadeArms.png";
+        legImage = "/jadeLegs.png";
 
         buttonName = "Clock Out";
     }
