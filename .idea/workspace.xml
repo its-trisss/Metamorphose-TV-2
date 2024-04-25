@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f832f447-85bf-4080-b066-8a607e5aff19" name="Changes" comment="">
+    <list default="true" id="f832f447-85bf-4080-b066-8a607e5aff19" name="Changes" comment="trying to get the build to run">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_media.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Days.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Days.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +79,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.HelloApplication.executor": "Run",
     "Application.Main.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
+    "Downloaded.Files.Path.Enabled": "true",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -96,9 +96,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Problems",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.4218391",
+    "project.structure.side.proportion": "0.5443038",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
@@ -151,6 +151,7 @@
       <workItem from="1713910356413" duration="4742000" />
       <workItem from="1714057156676" duration="5286000" />
       <workItem from="1714069468138" duration="5139000" />
+      <workItem from="1714076769283" duration="777000" />
     </task>
     <task id="LOCAL-00001" summary="Created the starting screen with a temporary background">
       <option name="closed" value="true" />
@@ -320,7 +321,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714071532751</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="trying to get the build to run">
+      <option name="closed" value="true" />
+      <created>1714076977976</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1714076977976</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,7 +385,8 @@
     <MESSAGE value="Added the day1 arms &amp; legs, changed the dialogue, moved the main screen buttons." />
     <MESSAGE value="Added day 2 characters. Changed the boar screen to be a tbc screen" />
     <MESSAGE value="Removed unused picture and audio" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed unused picture and audio" />
+    <MESSAGE value="trying to get the build to run" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying to get the build to run" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
