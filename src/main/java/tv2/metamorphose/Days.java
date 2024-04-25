@@ -70,8 +70,8 @@ public class Days {
         //TODO: Change this
         characterImage = "/lena.png";
         headImage = "/lenaHead.png";
-        armImage = "/arms.png";
-        legImage = "/legs.png";
+        armImage = "/lenaArms.png";
+        legImage = "/lenaLegs.png";
 
         buttonName = "Next Patient";
     }
@@ -79,13 +79,13 @@ public class Days {
     private void MilesJohnson() {
         name = "Miles Johnson";
         symptoms = new String[]{"Confusion", "Loss of Appetite", "Low Grade Fever", "Headache", "Small Rashes", "Skin Bumps", "Cold Sores", "Swollen Limbs", "Cracked Fingernails", "Skin Abscesses"};
-        dialogue = "Hey doc, I have not been eatin’ well, and I’ve had a pretty mild headache, but honestly I couldn’t tell you how long though it's kinda hard to remember.";
+        dialogue = "Hey doc, I have not been eatin’ well, I could have sworn Ive been running a fever, and I’ve had a pretty mild headache, but honestly I couldn’t tell you how long though it's kinda hard to remember.";
 
         //TODO: Change this
         characterImage = "/miles.png";
         headImage = "/milesHead.png";
-        armImage = "/arms.png";
-        legImage = "/legs.png";
+        armImage = "/milesArms.png";
+        legImage = "/milesLegs.png";
 
         buttonName = "Next Patient";
     }
@@ -94,13 +94,13 @@ public class Days {
         name = "Aria Foster";
         symptoms = new String[]{"High Grade Fever", "Headache", "Loss of Appetite", "Body Tremors",
                 "Small Rashes", "Skin Abscesses", "Skin Bumps", "Swollen Limbs", "Cold Sores", "Cracked Fingernails"};
-        dialogue = "Hey um yea, I have had a horrible headache and been running a pretty high fever for the last few days, haven’t been eating because of it, and I think I’ve been shaking.";
+        dialogue = "Hey um yea, I have had a horrible headache, been running a pretty high fever for the last few days, haven’t been eating because of it, and I think I’ve been shaking.";
 
         //TODO: Change this
         characterImage = "/aria.png";
         headImage = "/ariaHead.png";
-        armImage = "/arms.png";
-        legImage = "/legs.png";
+        armImage = "/ariaArms.png";
+        legImage = "/ariaLegs.png";
 
         buttonName = "Next Patient";
     }
@@ -108,13 +108,13 @@ public class Days {
     private void FinnODonoghue() {
         name = "Finn O'Donoghue";
         symptoms = new String[]{"Confusion", "Loss of Appetite", "Body Tremors", "Headache", "Small Rashes", "Skin Bumps", "Cold Sores", "Swollen Limbs", "Cracked Fingernails", "Skin Warts"};
-        dialogue = "Doc, imr feeln terble, em not hngry, and head hurts, and em shky.";
+        dialogue = "Doc, Imr feeln terble, em not hngry, and head hurts,I feeel lst ,and em shky.";
 
         //TODO: Change this
         characterImage = "/finn.png";
         headImage = "/finnHead.png";
-        armImage = "/arms.png";
-        legImage = "/legs.png";
+        armImage = "/finnArms.png";
+        legImage = "/finnLegs.png";
 
         buttonName = "Next Patient";
     }
@@ -123,13 +123,13 @@ public class Days {
         name = "Arjun Signh";
         symptoms = new String[]{"Low Grade Fever", "Headache", "Loss of Appetite", "Weakness",
                 "Bloody Nose", "Skin Lesions", "Swollen Limbs", "Cold Sores", "Cracked Fingernails"};
-        dialogue = "Evening, sorry to be here so late but i just got off work, I’ve has a fever, a headache, and haven’t been able to really eat, and it has been making me feel rather weak.";
+        dialogue = "Evening, sorry to be here so late but I just got off work, I’ve had a fever, a headache, haven’t been able to really eat, and it has been making me feel rather weak.";
 
         //TODO: Change this
         characterImage = "/arjun.png";
         headImage = "/arjunHead.png";
-        armImage = "/arms.png";
-        legImage = "/legs.png";
+        armImage = "/arjunArms.png";
+        legImage = "/arjunLegs.png";
 
         buttonName = "Clock Out";
     }
@@ -150,8 +150,8 @@ public class Days {
 
     private void AlexaKnight() {
         name = "Alexa Knight";
-        symptoms = new String[]{"General Weakness", "Loss of Appetite", "High Grade Fever", "Body Tremors", "Open Sores", "Cold Sores", "Swollen Limbs", "Visible Veins", "Skin Abscesses", "Blood Shot Eyes"};
-        dialogue = "Mornin’! Nice to see a new doctor in town, I’ve been recently dealing with some general weakness loss of appetite, and pretty high fever, and i believe that's whats making me super shaky";
+        symptoms = new String[]{"Weakness", "Loss of Appetite", "High Grade Fever", "Body Tremors", "Open Sores", "Cold Sores", "Swollen Limbs", "Visible Veins", "Skin Abscesses", "Blood Shot Eyes"};
+        dialogue = "Mornin’! Nice to see a new doctor in town, I’ve been recently dealing with some general weakness, loss of appetite, and pretty high fever, and I believe that's whats making me super shaky";
 
         //TODO: Change this
         characterImage = "/miles.png";
@@ -166,7 +166,7 @@ public class Days {
         name = "Sloan Cameron";
         symptoms = new String[]{"High Grade Fever", "Body Tremors", "Loss of Appetite", "Weakness", "Confusion",
                 "Bloodshot Eyes", "Skin Abscesses", "Skin Warts", "Small Rashes", "Visible Veins"};
-        dialogue = "Afternoon, I've been struggling with some shakiness and weakness, as well as some confusion and a rather high fever.";
+        dialogue = "Howdy Hey! I've been struggling with some shakiness and weakness, as well as I have been confused and a rather high fever.";
 
         //TODO: Change this
         characterImage = "/aria.png";
@@ -181,7 +181,7 @@ public class Days {
         name = "Ivy Sterling";
         symptoms = new String[]{"High Grade Fever", "Body Tremors", "Weakness", "Bloodshot Eyes", "Skin Warts",
                 "Visible Veins", "Open Sores", "Skin Gashes", "Swollen Limbs", "Cold Sores"};
-        dialogue = "I've been struggling to stand honestly, very weak and shaky, and i feel like i'm running a pretty high fever";
+        dialogue = "I've been struggling to stand honestly, very weak as well as shaky, and I feel like I'm running a pretty high fever";
 
         //TODO: Change this
         characterImage = "/aria.png";
@@ -195,7 +195,7 @@ public class Days {
     private void JadeLi() {
         name = "Jade Li";
         symptoms = new String[]{"High Grade Fever", "Headache", "Loss of Appetite", "Weakness",
-                "Visible Veins", "Open Sores", "Swollen Limbs", "Hair Loss", "Skin Abscesses", "Cracked Fingernails"};
+                "Visible Veins", "Open Sores", "Swollen Limbs", "Bloody Nose", "Skin Abscesses", "Cracked Fingernails"};
         dialogue = "I’ve been pretty weak lately, it's been hard to eat and move and I believe I may be running a fever";
 
         //TODO: Change this

@@ -175,7 +175,6 @@ public class Game {
 
         Button backButton = new Button("Back to Main Menu");
         backButton.setOnAction(event -> {
-
             new Main().start(stage);
         });
 
@@ -213,7 +212,7 @@ public class Game {
 
     private void BodyButtonAction(String imageUrl, String bodyPart) {
         ImageView imageView = new ImageView(new Image(imageUrl));
-        imageView.setFitWidth(300);
+//        imageView.setFitWidth(300);
         imageView.setFitHeight(550);
 
         VBox vBox = new VBox();

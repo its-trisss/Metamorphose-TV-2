@@ -6,10 +6,13 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.effect.ColorAdjust;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import javafx.scene.transform.Rotate;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import java.nio.file.Path;
@@ -52,16 +55,16 @@ public class Main extends Application {
 
 
     private void setupUI(StackPane root, Stage stage) {
-        VBox vbox = new VBox(25);
-        vbox.prefWidthProperty().bind(stage.widthProperty().multiply(0.3));
-        vbox.prefHeightProperty().bind(stage.heightProperty().multiply(0.8));
-        vbox.setAlignment(Pos.CENTER);
-        root.getChildren().add(vbox);
 
-        Button playButton = new Button("Play");
+        AnchorPane a = new AnchorPane();
+        root.getChildren().add(a);
+        Rotate r = new Rotate(-15,0,0);
+
+        Button playButton = new Button("Start");
         playButton.setId("playButton");
-        playButton.setLayoutX(1000);
-
+        playButton.setLayoutX(765);
+        playButton.setLayoutY(390);
+        playButton.getTransforms().add(r);
         playButton.setOnAction(event -> {
             try {
                 System.out.println("Play button clicked");
@@ -73,6 +76,10 @@ public class Main extends Application {
 
         Button optionButton = new Button("Options");
         optionButton.setId("optionsButton");
+        optionButton.setStyle("-fx-pref-width: 285");
+        optionButton.setLayoutX(780);
+        optionButton.setLayoutY(450);
+        optionButton.getTransforms().add(r);
         optionButton.setOnAction(event -> {
             try {
                 System.out.println("Options label clicked");
@@ -85,6 +92,9 @@ public class Main extends Application {
 
         Button exitButton = new Button("Exit");
         exitButton.setId("exitButton");
+        exitButton.setLayoutX(820);
+        exitButton.setLayoutY(520);
+        exitButton.getTransforms().add(r);
         exitButton.setOnAction(event -> {
             try {
                 System.out.println("Exit label clicked");
@@ -94,8 +104,10 @@ public class Main extends Application {
             }
         });
 
-        vbox.getChildren().addAll(playButton, optionButton, exitButton);
-        vbox.setSpacing(10);
+        a.getChildren().addAll(playButton,optionButton,exitButton);
+
+//        vbox.getChildren().addAll(playButton, optionButton, exitButton);
+//        vbox.setSpacing(10);
     }
 
     private void showTutorial(Stage stage) {

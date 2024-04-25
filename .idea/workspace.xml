@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f832f447-85bf-4080-b066-8a607e5aff19" name="Changes" comment="Got the days working properly">
+    <list default="true" id="f832f447-85bf-4080-b066-8a607e5aff19" name="Changes" comment="Removed the torso button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Days.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Days.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tv2/metamorphose/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/StyleSheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StyleSheet.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +152,7 @@
       <workItem from="1713824477590" duration="4728000" />
       <workItem from="1713892929046" duration="5239000" />
       <workItem from="1713910356413" duration="4742000" />
-      <workItem from="1714057156676" duration="880000" />
+      <workItem from="1714057156676" duration="5064000" />
     </task>
     <task id="LOCAL-00001" summary="Created the starting screen with a temporary background">
       <option name="closed" value="true" />
@@ -289,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713914944311</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Removed the torso button">
+      <option name="closed" value="true" />
+      <created>1714058195733</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1714058195733</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +350,8 @@
     <MESSAGE value="Added the logic for the second day. Also added in a boar screaming" />
     <MESSAGE value="Added the dependency for javafx-media" />
     <MESSAGE value="Got the days working properly" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got the days working properly" />
+    <MESSAGE value="Removed the torso button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed the torso button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -350,6 +360,11 @@
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />
           <option name="timeStamp" value="6" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tv2/metamorphose/Days.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
