@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f832f447-85bf-4080-b066-8a607e5aff19" name="Changes" comment="trying to get the media to work">
+    <list default="true" id="f832f447-85bf-4080-b066-8a607e5aff19" name="Changes" comment="Added the test cases">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tv2/metamorphose/DaysTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tv2/metamorphose/DaysTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +60,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
     &quot;associatedIndex&quot;: 3
@@ -90,14 +89,14 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Tristan/Downloads/Metamorphose",
+    "last_opened_file_path": "C:/Users/Tristan/Downloads/Metamorphose-TV-2-master(1)",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.4827586",
     "settings.editor.selected.configurable": "preferences.pluginManager",
@@ -152,7 +151,7 @@
       <workItem from="1713910356413" duration="4742000" />
       <workItem from="1714057156676" duration="5286000" />
       <workItem from="1714069468138" duration="5139000" />
-      <workItem from="1714076769283" duration="1649000" />
+      <workItem from="1714076769283" duration="3197000" />
     </task>
     <task id="LOCAL-00001" summary="Created the starting screen with a temporary background">
       <option name="closed" value="true" />
@@ -338,7 +337,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714077768526</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Added the test cases">
+      <option name="closed" value="true" />
+      <created>1714078463449</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1714078463449</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,7 +403,8 @@
     <MESSAGE value="Removed unused picture and audio" />
     <MESSAGE value="trying to get the build to run" />
     <MESSAGE value="trying to get the media to work" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to get the media to work" />
+    <MESSAGE value="Added the test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the test cases" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
