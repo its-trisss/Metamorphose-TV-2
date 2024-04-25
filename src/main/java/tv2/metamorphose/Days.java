@@ -13,7 +13,7 @@ public class Days {
 
     public Days(int day, int patientNum) {
         if (day == 1) {
-            beginDayDialogue = "The new assignments always suck, new place no ones heard from in years and all of a sudden lets go check on these whinos down in the sticks.\n " +
+            beginDayDialogue = "The new assignments always suck, new place no ones heard from in years and all of a sudden \"lets go check on these whinos down in the sticks.\"\n " +
                     "It's been a few months since I've been able to practice though, so I suppose it's about time I get back into it, even if it is only for the next three days";
             Day1(patientNum);
         }
