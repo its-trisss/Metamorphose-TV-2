@@ -1,3 +1,5 @@
+Notice This game is Setup to run in INtelliJ Idea, It is not yet developed for any other platforms.
+
 Product Name: 
 Metamorphose
 
